@@ -1,0 +1,95 @@
+.container {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to right, #162938, #0A2342);
+  color: #F8EDE3;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+button[type="submit"] {
+  margin-left: 10px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #F8EDE3;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.timestamp {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 50%;
+  border-radius: 25px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task span {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.cancel-btn {
+  margin-top: 8px;
+}
+.cancel-btn button {
+  background-color: #f44336; /* red tone */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+

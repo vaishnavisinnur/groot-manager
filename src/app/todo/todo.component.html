@@ -1,0 +1,45 @@
+<!-- <div class="container">
+  <h1>Just do it.</h1>
+
+  <div class="add-task">
+    <input type="text" [(ngModel)]="taskobj.newtask" name="task" placeholder="Add a task" required>
+    <button type="button" (click)=" addOrUpdateTask()">I Got This!</button>
+  </div>
+
+ <ul *ngIf="tasklist.length > 0" class="task-list">
+  <li *ngFor="let task of tasklist; let i = index" class="task-item">
+    <span>{{ task.newtask }}</span>
+    <div class="action-buttons">
+      <button class="update-btn"  (click)="edittask(i)" >Edit</button>
+      <button class="remove-btn" (click)="removetask(i)">Delete</button>
+    </div>
+  </li>
+</ul>
+
+<p *ngIf="tasklist.length === 0" class="empty-message">No tasks added yet. Start planning your day! 🚀</p>
+</div> -->
+
+<div class="container">
+  <h1>Just do it.</h1>
+
+  <div class="add-task">
+    <input type="text" [(ngModel)]="NEWtask" name="task" placeholder="Add a task" required>
+    <button type="button" (click)="addTask()">I Got This!</button>
+  </div>
+
+  <!-- Task List -->
+  <ul *ngIf="tasklist.length > 0" class="task-list">
+    <li *ngFor="let task of tasklist; let i = index" class="task-item">
+      <span>{{ task.NEWtask }}</span>
+      <div class="action-buttons">
+        <button class="update-btn" (click)="updateTask()">Edit</button>
+        <button class="remove-btn" (click)="deleteTask(task)">Delete</button>
+      </div>
+    </li>
+  </ul>
+
+  <p *ngIf="tasklist.length === 0" class="empty-message">
+    No tasks added yet. Start planning your day! 🚀
+  </p>
+</div>
+
